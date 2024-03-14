@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carola-matteo-boolzap-vue</title>
+
+
+
+    <!-- font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- css media queries -->
+    <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+
+
+    <!-- css custom -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- VUE-JS -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body id="app" class="d-flex" >
+  <div class="row">
+    <div class="col user">
+      <div class="top-col-user d-flex">
+        <div class="top-user-image">
+          <img src="assets/img/avatar_io.jpg" alt="">
+        </div>
+
+        <div class="top-user-strumental">
+          <i class="fa-solid fa-circle-notch text-color text-l m-right-m"></i>
+          <i class="fa-solid fa-message text-color text-l m-right-m"></i>
+          <i class="fa-solid fa-ellipsis-vertical text-color text-l m-right-m"></i>
+        </div>
+
+        
+
+      </div>
+
+      <div class="top-notification d-flex">
+
+        <div class="ring-items ">
+          <i class="fa-solid fa-bell-slash text-l m-left-xs"></i>
+        </div>
+
+        <div class="text-notifications m-left-xs">
+          <span>Ricevi notifiche di nuovi messaggi</span>
+          <br>
+          <a  class="text-xs" href="#">Attiva notifiche desktop</a>
+        </div>
+
+      </div>
+
+      <div class="full-list-user">
+
+        <div class="search-user d-flex">
+          <div class="search-iteam">
+            <i class="fa-solid fa-magnifying-glass  color-items "></i>
+          </div>
+          <div class="search-bar">
+            <input class="p-medium" type="text" placeholder="Cerca o inizia una nuova chat">
+          </div>
+        </div>
+
+        <div class="full-user">
+
+          <div class="list-user d-flex">
+
+            <div class="d-flex">
+              <div class="box-user d-flex">
+                <div class="img-user">
+                  <img src="assets/img/avatar_1.jpg" alt="">
+                </div>
+              </div>
+    
+              <div class="description-user margin-m">
+                  <h3 class="m-bottom-xs">Michele</h3>
+                  <span class="text-xs">Lorem ipsum dolor sit amet.</span>
+              </div>
+            </div>
+          
+
+            <div class="time-user">
+              <span class="text-xs color-items m-right-xs">16:05</span>
+            </div>
+  
+          </div>
+
+          <div class="list-user d-flex">
+
+            <div class="d-flex">
+              <div class="box-user d-flex">
+                <div class="img-user">
+                  <img src="assets/img/avatar_2.jpg" alt="">
+                </div>
+              </div>
+    
+              <div class="description-user margin-m">
+                  <h3 class="m-bottom-xs">Fabio</h3>
+                  <span class="text-xs">Lorem ipsum dolor sit amet.</span>
+              </div>
+            </div>
+          
+
+            <div class="time-user">
+              <span class="text-xs color-items m-right-xs">16:05</span>
+            </div>
+  
+          </div>
+
+
+          <div class="list-user d-flex">
+
+            <div class="d-flex">
+              <div class="box-user d-flex">
+                <div class="img-user">
+                  <img src="assets/img/avatar_3.jpg" alt="">
+                </div>
+              </div>
+    
+              <div class="description-user margin-m">
+                  <h3 class="m-bottom-xs">Samuele</h3>
+                  <span class="text-xs">Lorem ipsum dolor sit amet.</span>
+              </div>
+            </div>
+          
+
+            <div class="time-user">
+              <span class="text-xs color-items m-right-xs">16:03</span>
+            </div>
+  
+          </div>
+
+          <div class="list-user d-flex">
+
+            <div class="d-flex">
+              <div class="box-user d-flex">
+                <div class="img-user">
+                  <img src="assets/img/avatar_4.jpg" alt="">
+                </div>
+              </div>
+    
+              <div class="description-user margin-m">
+                  <h3 class="m-bottom-xs">Alessandro B.</h3>
+                  <span class="text-xs">Lorem ipsum dolor sit amet.</span>
+              </div>
+            </div>
+          
+
+            <div class="time-user">
+              <span class="text-xs color-items m-right-xs">15:50</span>
+            </div>
+  
+          </div>
+
+          <div class="list-user d-flex">
+
+            <div class="d-flex">
+              <div class="box-user d-flex">
+                <div class="img-user">
+                  <img src="assets/img/avatar_5.jpg" alt="">
+                </div>
+              </div>
+    
+              <div class="description-user margin-m">
+                  <h3 class="m-bottom-xs">Alessandro L.</h3>
+                  <span class="text-xs">Lorem ipsum dolor sit amet.</span>
+              </div>
+            </div>
+          
+
+            <div class="time-user">
+              <span class="text-xs color-items m-right-xs">15:45</span>
+            </div>
+  
+          </div>
+
+          <div class="list-user d-flex">
+
+            <div class="d-flex">
+              <div class="box-user d-flex">
+                <div class="img-user">
+                  <img src="assets/img/avatar_6.jpg" alt="">
+                </div>
+              </div>
+    
+              <div class="description-user margin-m">
+                  <h3 class="m-bottom-xs">Claudia</h3>
+                  <span class="text-xs">Lorem ipsum dolor sit amet.</span>
+              </div>
+            </div>
+          
+
+            <div class="time-user">
+              <span class="text-xs color-items m-right-xs">15:40</span>
+            </div>
+  
+          </div>
+
+          <div class="list-user d-flex">
+
+            <div class="d-flex">
+              <div class="box-user d-flex">
+                <div class="img-user">
+                  <img src="assets/img/avatar_7.jpg" alt="">
+                </div>
+              </div>
+    
+              <div class="description-user margin-m">
+                  <h3 class="m-bottom-xs">Federico</h3>
+                  <span class="text-xs">Lorem ipsum dolor sit amet.</span>
+              </div>
+            </div>
+          
+
+            <div class="time-user">
+              <span class="text-xs color-items m-right-xs">15:22</span>
+            </div>
+  
+          </div>
+
+          <div class="list-user d-flex">
+
+            <div class="d-flex">
+              <div class="box-user d-flex">
+                <div class="img-user">
+                  <img src="assets/img/avatar_8.jpg" alt="">
+                </div>
+              </div>
+    
+              <div class="description-user margin-m">
+                  <h3 class="m-bottom-xs">Davide</h3>
+                  <span class="text-xs">Lorem ipsum dolor sit amet.</span>
+              </div>
+            </div>
+          
+
+            <div class="time-user">
+              <span class="text-xs color-items m-right-xs">15:15</span>
+            </div>
+  
+          </div>
+
+
+          
+        </div>
+
+      </div>
+    </div>
+    <div class="col message">
+      <div class=" top-message d-flex">
+        <div class="user-section d-flex">
+          <img src="assets/img/avatar_1.jpg" alt="michele">
+          <div class="user-name d-flex">
+            <span>Michele</span>
+            <span class="access text-xs text-color">Ultimo accesso oggi allr 16:26</span>
+          </div>
+        </div>
+        <div class="user-strumental ">
+          <i class="fa-solid fa-magnifying-glass text-color text-l m-right-m"></i>
+          <i class="fa-solid fa-paperclip text-color text-l m-right-m"></i>
+          <i class="fa-solid fa-ellipsis-vertical text-color text-l m-right-m"></i>
+        </div>
+      </div>
+      <div class="main-message">
+        <div class="message-container-sent d-flex">
+          <div class="message-sent d-flex">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta perspiciatis necessitatibus placeat modi esse. Voluptates ullam nostrum ratione quis ipsum neque amet, delectus nam asperiores?</p>
+            <div class="option-chevron">
+              <i class="fa-solid fa-chevron-down p-medium m-top-xs"></i>
+              <div class="chevron-block p-medium d-flex">
+                  <span class="margin-m ">Info messagio</span>
+                  <span class="margin-m">Cancella messaggio</span>
+              </div>
+            </div>
+          <div class="message-time text-xs color-items">
+            16:13
+          </div>
+          </div>
+        </div>
+        <div class="message-container-received">
+          <div class="message-received d-flex">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt velit error earum, voluptatibus aperiam tempore dicta omnis veniam necessitatibus minima asperiores quo culpa saepe dolorum.</p>
+            <div class="option-chevron">
+              <i class="fa-solid fa-chevron-down p-medium m-top-xs"></i>
+              <div class="chevron-block p-medium d-flex">
+                  <span class="margin-m ">Info messagio</span>
+                  <span class="margin-m">Cancella messaggio</span>
+              </div>
+            </div>
+          <div class="message-time text-xs color-items">
+            16:15
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class=" bottom-message d-flex">
+        <i class="fa-regular fa-face-smile text-l color-items"></i>
+        <input type="text" name="" id="" placeholder="Scrivi un messaggio">
+        <i class="fa-solid fa-microphone text-l  color-items"></i>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
