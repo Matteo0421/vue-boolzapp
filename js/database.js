@@ -162,7 +162,6 @@ const contacts = [
   }
 ]
 
-export {contacts};
 
 
 

@@ -26,8 +26,8 @@
     <!-- VUE-JS -->
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
-<body id="app" class="d-flex" >
-  <div class="row">
+<body class="d-flex" >
+  <div class="row" id="app" >
     <div class="col user">
       <div class="top-col-user d-flex">
         <div class="top-user-image">
@@ -71,7 +71,8 @@
 
         <div class="full-user">
 
-          <div class="list-user d-flex">
+          <div v-for="contact in contacts" 
+          class="list-user d-flex">
 
             <div class="d-flex">
               <div class="box-user d-flex">
@@ -81,7 +82,7 @@
               </div>
     
               <div class="description-user margin-m">
-                  <h3 class="m-bottom-xs">Michele</h3>
+                  <h3 class="m-bottom-xs">{{ contact.name }}</h3>
                   <span class="text-xs">Lorem ipsum dolor sit amet.</span>
               </div>
             </div>
@@ -93,161 +94,7 @@
   
           </div>
 
-          <div class="list-user d-flex">
-
-            <div class="d-flex">
-              <div class="box-user d-flex">
-                <div class="img-user">
-                  <img src="assets/img/avatar_2.jpg" alt="">
-                </div>
-              </div>
-    
-              <div class="description-user margin-m">
-                  <h3 class="m-bottom-xs">Fabio</h3>
-                  <span class="text-xs">Lorem ipsum dolor sit amet.</span>
-              </div>
-            </div>
           
-
-            <div class="time-user">
-              <span class="text-xs color-items m-right-xs">16:05</span>
-            </div>
-  
-          </div>
-
-
-          <div class="list-user d-flex">
-
-            <div class="d-flex">
-              <div class="box-user d-flex">
-                <div class="img-user">
-                  <img src="assets/img/avatar_3.jpg" alt="">
-                </div>
-              </div>
-    
-              <div class="description-user margin-m">
-                  <h3 class="m-bottom-xs">Samuele</h3>
-                  <span class="text-xs">Lorem ipsum dolor sit amet.</span>
-              </div>
-            </div>
-          
-
-            <div class="time-user">
-              <span class="text-xs color-items m-right-xs">16:03</span>
-            </div>
-  
-          </div>
-
-          <div class="list-user d-flex">
-
-            <div class="d-flex">
-              <div class="box-user d-flex">
-                <div class="img-user">
-                  <img src="assets/img/avatar_4.jpg" alt="">
-                </div>
-              </div>
-    
-              <div class="description-user margin-m">
-                  <h3 class="m-bottom-xs">Alessandro B.</h3>
-                  <span class="text-xs">Lorem ipsum dolor sit amet.</span>
-              </div>
-            </div>
-          
-
-            <div class="time-user">
-              <span class="text-xs color-items m-right-xs">15:50</span>
-            </div>
-  
-          </div>
-
-          <div class="list-user d-flex">
-
-            <div class="d-flex">
-              <div class="box-user d-flex">
-                <div class="img-user">
-                  <img src="assets/img/avatar_5.jpg" alt="">
-                </div>
-              </div>
-    
-              <div class="description-user margin-m">
-                  <h3 class="m-bottom-xs">Alessandro L.</h3>
-                  <span class="text-xs">Lorem ipsum dolor sit amet.</span>
-              </div>
-            </div>
-          
-
-            <div class="time-user">
-              <span class="text-xs color-items m-right-xs">15:45</span>
-            </div>
-  
-          </div>
-
-          <div class="list-user d-flex">
-
-            <div class="d-flex">
-              <div class="box-user d-flex">
-                <div class="img-user">
-                  <img src="assets/img/avatar_6.jpg" alt="">
-                </div>
-              </div>
-    
-              <div class="description-user margin-m">
-                  <h3 class="m-bottom-xs">Claudia</h3>
-                  <span class="text-xs">Lorem ipsum dolor sit amet.</span>
-              </div>
-            </div>
-          
-
-            <div class="time-user">
-              <span class="text-xs color-items m-right-xs">15:40</span>
-            </div>
-  
-          </div>
-
-          <div class="list-user d-flex">
-
-            <div class="d-flex">
-              <div class="box-user d-flex">
-                <div class="img-user">
-                  <img src="assets/img/avatar_7.jpg" alt="">
-                </div>
-              </div>
-    
-              <div class="description-user margin-m">
-                  <h3 class="m-bottom-xs">Federico</h3>
-                  <span class="text-xs">Lorem ipsum dolor sit amet.</span>
-              </div>
-            </div>
-          
-
-            <div class="time-user">
-              <span class="text-xs color-items m-right-xs">15:22</span>
-            </div>
-  
-          </div>
-
-          <div class="list-user d-flex">
-
-            <div class="d-flex">
-              <div class="box-user d-flex">
-                <div class="img-user">
-                  <img src="assets/img/avatar_8.jpg" alt="">
-                </div>
-              </div>
-    
-              <div class="description-user margin-m">
-                  <h3 class="m-bottom-xs">Davide</h3>
-                  <span class="text-xs">Lorem ipsum dolor sit amet.</span>
-              </div>
-            </div>
-          
-
-            <div class="time-user">
-              <span class="text-xs color-items m-right-xs">15:15</span>
-            </div>
-  
-          </div>
-
 
           
         </div>
