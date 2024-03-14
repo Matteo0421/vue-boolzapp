@@ -118,8 +118,10 @@
       </div>
       <div class="main-message">
         <div class="message-container-sent d-flex">
-          <div class="message-sent d-flex">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta perspiciatis necessitatibus placeat modi esse. Voluptates ullam nostrum ratione quis ipsum neque amet, delectus nam asperiores?</p>
+          <div
+          v-for="message in contacts.messages"
+          class="message-sent d-flex">
+            <p>{{message.message}}</p>
             <div class="option-chevron">
               <i class="fa-solid fa-chevron-down p-medium m-top-xs"></i>
               <div class="chevron-block p-medium d-flex">
@@ -133,8 +135,10 @@
           </div>
         </div>
         <div class="message-container-received">
-          <div class="message-received d-flex">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt velit error earum, voluptatibus aperiam tempore dicta omnis veniam necessitatibus minima asperiores quo culpa saepe dolorum.</p>
+          <div 
+          v-for="message in contacts.messages"
+          class="message-received d-flex">
+            <p>{{message.message}}</p>
             <div class="option-chevron">
               <i class="fa-solid fa-chevron-down p-medium m-top-xs"></i>
               <div class="chevron-block p-medium d-flex">
