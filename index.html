@@ -117,40 +117,27 @@
         </div>
       </div>
       <div class="main-message">
-        <div class="message-container-sent d-flex">
+        <div>
           <div
-          v-for="message in contacts[0].messages"
-          class="message-sent d-flex">
-            <p>{{message.message}}</p>
+            v-for="(message, index) in contacts[0].messages"
+            :class="message.status === 'sent' ? 'message-container-sent' : 'message-container-received'"
+            :key="index" 
+          >
+            <p>{{ message.message }}</p>
             <div class="option-chevron">
               <i class="fa-solid fa-chevron-down p-medium m-top-xs"></i>
               <div class="chevron-block p-medium d-flex">
-                  <span class="margin-m ">Info messagio</span>
-                  <span class="margin-m">Cancella messaggio</span>
+                <span class="margin-m ">Info messaggio</span>
+                <span class="margin-m">Cancella messaggio</span>
               </div>
             </div>
-          <div class="message-time text-xs color-items">
-            16:13
-          </div>
-          </div>
-        </div>
-        <div class="message-container-received">
-          <div 
-          class="message-received d-flex">
-            <p>{{message.message}}</p>
-            <div class="option-chevron">
-              <i class="fa-solid fa-chevron-down p-medium m-top-xs"></i>
-              <div class="chevron-block p-medium d-flex">
-                  <span class="margin-m ">Info messagio</span>
-                  <span class="margin-m">Cancella messaggio</span>
-              </div>
+            <div class="message-time text-xs color-items">
+              {{ message.date }}
             </div>
-          <div class="message-time text-xs color-items">
-            16:15
-          </div>
           </div>
         </div>
       </div>
+      
       <div class=" bottom-message d-flex">
         <i class="fa-regular fa-face-smile text-l color-items"></i>
         <input type="text" name="" id="" placeholder="Scrivi un messaggio">

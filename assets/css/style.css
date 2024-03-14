@@ -222,22 +222,26 @@ display: block;
   margin-top: 50px;
 }
 
-.message-container-sent,
+/* .message-container-sent,
 .message-container-received{
   width: 80%;
   margin: 0 auto;
-}
+} */
 
 .message-container-sent{
-  justify-content: end;
-}
-
-.message-container-sent .message-sent{
+  margin-left: 200px;
   width: 65%;
   background-color: var(--color-message-sent);
+  margin-top: 30px;
 }
 
-.message-container-received .message-received{
+/* .message-container-sent .message-sent{
+  width: 65%;
+  background-color: var(--color-message-sent);
+} */
+
+.message-container-received {
+  margin: 7%;
   width: 65%;
   background-color: white;
 }
