@@ -140,7 +140,11 @@
       
       <div class=" bottom-message d-flex">
         <i class="fa-regular fa-face-smile text-l color-items"></i>
-        <input type="text" name="" id="" placeholder="Scrivi un messaggio">
+        <input 
+        v-model.trim="newMessage" 
+        @keyup.enter="addMessage"
+        
+        type="text" name="" id="" placeholder="Scrivi un messaggio">
         <i class="fa-solid fa-microphone text-l  color-items"></i>
       </div>
     </div>

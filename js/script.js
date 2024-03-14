@@ -169,7 +169,8 @@ createApp({
                 }
             ],
         }
-      ]
+      ],
+      newMessage:'',
 
     }
   },
@@ -177,9 +178,17 @@ createApp({
   // si scrivono tutte le funzioni
   methods:{
 
-    // nomefunzione(){
-    //   corpo funzione
-    // }
+    addMessage() {
+      const orario = new Date().toLocaleString();
+      
+      const index = 0; 
+      this.contacts[index].messages.push({ 
+        date: orario, 
+        message: this.newMessage, 
+        status: 'sent' });
+    
+      this.newMessage = '';
+  }
   }
 
 }).mount('#app');
