@@ -1,3 +1,4 @@
+import { contacts } from "./database";
 const { createApp } = Vue;
 
 // scrivere tutto il codice dentro a createapp
