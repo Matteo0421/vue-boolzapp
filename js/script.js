@@ -1,7 +1,7 @@
 
 const { createApp } = Vue;
 
-import { contacts } from "./database";
+import { contacts } from "./database.js";
 // scrivere tutto il codice dentro a createapp
 createApp({
 
@@ -10,6 +10,7 @@ createApp({
     return{
       contacts,
       newMessage:'',
+      activeContact:'0',
 
     }
   },
@@ -21,13 +22,21 @@ createApp({
       const orario = new Date().toLocaleString();
       
       const index = 0; 
-      this.contacts[index].messages.push({ 
+      this.contacts[this.activeContact].messages.push({ 
         date: orario, 
         message: this.newMessage, 
         status: 'sent' });
     
       this.newMessage = '';
+  },
+
+  changeActiveContact(index) {
+    this.activeContact = index;
   }
-  }
+  },
+
+//   created(){
+//     this.activeContact = this.contacts[0]
+//   }
 
 }).mount('#app');

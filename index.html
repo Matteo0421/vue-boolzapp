@@ -71,8 +71,9 @@
 
         <div class="full-user">
 
-          <div v-for="contact in contacts" 
-          class="list-user d-flex">
+          <div v-for="(contact, index) in contacts" 
+          class="list-user d-flex"
+          @click="changeActiveContact(index)">
 
             <div class="d-flex">
               <div class="box-user d-flex">
@@ -104,9 +105,9 @@
     <div class="col message">
       <div class=" top-message d-flex">
         <div class="user-section d-flex">
-          <img src="img/avatar_1.jpg" alt="michele">
+          <img :src="contacts[activeContact].avatar" alt="michele">
           <div class="user-name d-flex">
-            <span>Michele</span>
+            <span>{{ contacts[activeContact].name }}</span>
             <span class="access text-xs text-color">Ultimo accesso oggi alle 16:26</span>
           </div>
         </div>
@@ -119,9 +120,10 @@
       <div class="main-message">
         <div>
           <div
-            v-for="(message, index) in contacts[0].messages"
+            v-for="(message, index) in contacts[activeContact].messages"
+            
             :class="message.status === 'sent' ? 'message-container-sent' : 'message-container-received'"
-            :key="index" 
+            
           >
             <p>{{ message.message }}</p>
             <div class="option-chevron">
@@ -150,6 +152,6 @@
     </div>
   </div>
 
-  <script src="js/script.js"></script>
+  <script type="module" src="js/script.js"></script>
 </body>
 </html>
