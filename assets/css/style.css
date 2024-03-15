@@ -233,6 +233,8 @@ display: block;
   width: 65%;
   background-color: var(--color-message-sent);
   margin-top: 30px;
+  position: relative;
+  padding: 15px;
 }
 
 /* .message-container-sent .message-sent{
@@ -244,6 +246,8 @@ display: block;
   margin: 7%;
   width: 65%;
   background-color: white;
+  position: relative;
+  padding: 15px;
 }
 
 .message-sent,
@@ -280,6 +284,17 @@ display: block;
   height: 70%;
   border: white;
   border-radius: 5px;
+}
+
+.option-chevron{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.message-time{
+  text-align: end;
+  margin-top: 10px;
 }
 
 /* ÷BOTTOMM COL MESSAGE */

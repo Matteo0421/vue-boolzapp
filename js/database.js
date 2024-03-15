@@ -162,6 +162,6 @@ const contacts = [
   }
 ]
 
-
+export {contacts};
 
 
