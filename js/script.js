@@ -11,6 +11,7 @@ createApp({
       contacts,
       newMessage:'',
       activeContact:'0',
+      searchUser: ''
 
     }
   },
@@ -42,6 +43,14 @@ createApp({
     this.activeContact = index;
   }
   },
+
+  computed: {
+    filteredContacts() {
+        return this.contacts.filter(contact =>
+            contact.name.toLowerCase().includes(this.searchUser.toLowerCase())
+        );
+    }
+},
 
 //   created(){
 //     this.activeContact = this.contacts[0]

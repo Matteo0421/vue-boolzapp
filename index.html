@@ -65,13 +65,15 @@
             <i class="fa-solid fa-magnifying-glass  color-items "></i>
           </div>
           <div class="search-bar">
-            <input class="p-medium" type="text" placeholder="Cerca o inizia una nuova chat">
+            <input 
+            v-model="searchUser"
+            class="p-medium" type="text" placeholder="Cerca o inizia una nuova chat">
           </div>
         </div>
 
         <div class="full-user">
 
-          <div v-for="(contact, index) in contacts" 
+          <div v-for="(contact, index) in filteredContacts" 
           class="list-user d-flex"
           @click="changeActiveContact(index)">
 
